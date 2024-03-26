@@ -11,7 +11,7 @@ const Info = (props: { role: string }) => {
   const [userBalance, setUserBalance] = useState({ balance: "0" });
 
   const getBalance = () => {
-    if (role == "owner") {
+    if (role === "owner") {
       axios
         .all([axios.get(OWNER_BALANCE_API)])
         .then((res) => {
@@ -36,7 +36,7 @@ const Info = (props: { role: string }) => {
         <Button onClick={getBalance} variant="primary">
           Check Balance
         </Button>{" "}
-        <p>{role == "owner" ? ownerBalance.balance : userBalance.balance}</p>
+        <p>{role === "owner" ? ownerBalance.balance : userBalance.balance}</p>
       </div>
     </>
   );
