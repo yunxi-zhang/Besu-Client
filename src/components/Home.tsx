@@ -1,6 +1,6 @@
 import { Card } from 'react-bootstrap';
 
-export default () => {
+const Home = () => {
     return (
         <Card>
             <Card.Body>
@@ -9,3 +9,5 @@ export default () => {
         </Card>
     )
 }
+
+export default Home;

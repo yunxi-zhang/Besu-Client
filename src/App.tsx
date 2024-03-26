@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
