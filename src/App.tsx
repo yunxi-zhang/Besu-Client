@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Owner from "./components/Owner";
 import User from "./components/User";
-import NavBar from "./components/NavBar";
+import Error from "./components/Error";
 import "./App.css";
 
 const App = () => {
@@ -14,10 +15,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/owner" element={<Owner />} />
           <Route path="/user" element={<User />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
