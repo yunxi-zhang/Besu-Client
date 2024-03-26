@@ -1,13 +1,15 @@
-import { Card } from 'react-bootstrap';
+import { Card } from "react-bootstrap";
+import Balance from "./Balance";
 
-const Owner = () => {
-    return (
-        <Card>
-            <Card.Body>
-                Hello, Welcome to User Page
-            </Card.Body>
-        </Card>
-    )
-}
+const User = () => {
+  return (
+    <>
+      <Card>
+        <Card.Body>User Page</Card.Body>
+      </Card>
+      <Balance role={"user"}/>
+    </>
+  );
+};
 
-export default Owner;
+export default User;
